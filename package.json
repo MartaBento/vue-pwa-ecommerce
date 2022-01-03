@@ -23,6 +23,7 @@
   "devDependencies": {
     "@nuxtjs/tailwindcss": "^4.2.1",
     "eslint-config-prettier": "^8.3.0",
+    "frontmatter-markdown-loader": "^3.6.3",
     "postcss": "^8.4.4",
     "prettier": "^2.5.1"
   }
