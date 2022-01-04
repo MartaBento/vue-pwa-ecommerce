@@ -1,4 +1,5 @@
 const path = require('path')
+import guides from "./contents/guides/guides.js"
 
 export default {
   // Disable server-side rendering: https://go.nuxtjs.dev/ssr-mode
@@ -44,8 +45,46 @@ export default {
   // PWA module configuration: https://go.nuxtjs.dev/pwa
   pwa: {
     manifest: {
+      name: 'Vue PWA Organic Fruit Shop',
+      short_name: 'Nuxt.js PWA Shop',
       lang: 'en',
+      display: 'standalone',
     },
+  },
+
+  // generates dynamic routes
+  generate: {
+    fallback: true,
+    routes: [].concat(guides.map(guide => `guides/${guide}`))
+  },
+
+  // specify which assets from external domains to cache
+  workbox: {
+    runtimeCaching: [
+      {
+        urlPattern: 'https://fonts.googleapis.com/.*',
+        handler: 'cacheFirst',
+        method: 'GET',
+        strategyOptions: { cacheableResponse: { statuses: [0, 200] } }
+      },
+      {
+        urlPattern: 'https://fonts.gstatic.com/.*',
+        handler: 'cacheFirst',
+        method: 'GET',
+        strategyOptions: { cacheableResponse: { statuses: [0, 200] } }
+      },
+      {
+        urlPattern: 'https://cdn.snipcart.com/.*',
+        method: 'GET',
+        strategyOptions: { cacheableResponse: { statuses: [0, 200] } }
+      },
+      {
+        urlPattern: 'https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js',
+        handler: 'cacheFirst',
+        method: 'GET',
+        strategyOptions: { cacheableResponse: { statuses: [0, 200] } }
+      }
+    ]
   },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build

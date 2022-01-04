@@ -26,7 +26,11 @@
               v-for="(product, index) in guide.attributes.products"
               :key="index"
             >
-              <img :src="product.image" :alt="product.name" />
+              <img
+                class="object-scale-down h-96 w-full"
+                :src="product.image"
+                :alt="product.name"
+              />
               <p class="font-mono flex justify-center">{{ product.name }}</p>
               <div class="flex justify-center gap-6 m-3">
                 <button
@@ -41,12 +45,12 @@
                     px-5
                     py-2.5
                     text-center
-                    mr-2
                     mb-2
                     dark:bg-blue-600
                     dark:hover:bg-blue-700
                     dark:focus:ring-blue-800
                     justify-center
+                    place-self-stretch
                   "
                   :data-item-id="product.sku"
                   :data-item-name="product.name"
