@@ -12,41 +12,50 @@
             <p>{{ guide.attributes.description }}</p>
           </div>
           <div
-            class="grid grid-cols-2 sm:grid-cols-3 justify-center gap-8 mb-10"
+            class="
+              grid grid-cols-2
+              sm:grid-cols-3
+              gap-6
+              mb-10
+              mx-auto
+              justify-center
+            "
           >
             <article
-              class=""
+              class="justify-center"
               v-for="(product, index) in guide.attributes.products"
               :key="index"
             >
               <img :src="product.image" :alt="product.name" />
-              <p class="font-mono">{{ product.name }}</p>
-              <button
-                class="
-                  buy-button
-                  snipcart-add-item
-                  mt-6
-                  py-2
-                  px-4
-                  bg-gradient-to-r
-                  from-green-400
-                  to-blue-500
-                  hover:from-pink-500 hover:to-yellow-500
-                  text-white
-                  font-bold
-                  rounded-full
-                  shadow-offset
-                  hover:shadow-lg
-                  transition
-                  duration-300
-                "
-                :data-item-id="product.sku"
-                :data-item-name="product.name"
-                :data-item-price="product.price"
-                :data-item-image="product.image"
-              >
-                {{ `$${product.price}` }}
-              </button>
+              <p class="font-mono flex justify-center">{{ product.name }}</p>
+              <div class="flex justify-center gap-6 m-3">
+                <button
+                  class="
+                    text-white
+                    bg-blue-700
+                    hover:bg-blue-800
+                    focus:ring-4 focus:ring-blue-300
+                    font-medium
+                    rounded-full
+                    text-sm
+                    px-5
+                    py-2.5
+                    text-center
+                    mr-2
+                    mb-2
+                    dark:bg-blue-600
+                    dark:hover:bg-blue-700
+                    dark:focus:ring-blue-800
+                    justify-center
+                  "
+                  :data-item-id="product.sku"
+                  :data-item-name="product.name"
+                  :data-item-price="product.price"
+                  :data-item-image="product.image"
+                >
+                  {{ `€${product.price}` }}
+                </button>
+              </div>
             </article>
           </div>
         </section>
@@ -67,7 +76,7 @@ export default {
   },
   head() {
     return {
-      title: 'All posts | Nuxt.js PWA Organic Fruit Shop',
+      title: 'Vue PWA Organic Fruit Shop',
     }
   },
 }

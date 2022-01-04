@@ -23,4 +23,14 @@ products:
      name: "Strawberries"
      price: "7.99"
      image: "../images/strawberries.png"
+    -
+     sku: "orange01"
+     name: "Oranges"
+     price: "0.99"
+     image: "../images/orange.png"
+    -
+     sku: "grapes01"
+     name: "Grapes"
+     price: "2.39"
+     image: "../images/grapes.png"
 ---
