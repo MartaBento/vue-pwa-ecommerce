@@ -35,6 +35,8 @@
               <div class="flex justify-center gap-6 m-3">
                 <button
                   class="
+                    buy-button
+                    snipcart-add-item
                     text-white
                     bg-blue-700
                     hover:bg-blue-800
