@@ -58,6 +58,7 @@
                   :data-item-name="product.name"
                   :data-item-price="product.price"
                   :data-item-image="product.image"
+                  :data-item-url="`https://eloquent-lalande-af1873.netlify.app/`"
                 >
                   {{ `€${product.price}` }}
                 </button>
