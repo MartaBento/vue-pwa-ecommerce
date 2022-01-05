@@ -1,6 +1,11 @@
-# vue-pwa-ecommerce
+# Vue PWA Organic Fruit Shop
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/96b7b3c5-7bbb-4aff-b7dc-4398e5d2f263/deploy-status)](https://app.netlify.com/sites/vue-nuxt-ecommerce-fruit-shop/deploys)
+
+## Intro
+
+The main goal was to create a Progressive Web Application with Nuxt.js, Vue & Snipcart.
+Tailwind was used has the CSS Framework for this project.
 
 ## Build Setup
 
@@ -18,3 +23,11 @@ $ npm run start
 # generate static project
 $ npm run generate
 ```
+
+## Screenshots
+### Desktop
+
+### Mobile
+
+
+## Lighthouse Report
