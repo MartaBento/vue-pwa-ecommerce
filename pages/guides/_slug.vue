@@ -42,7 +42,7 @@
             :data-item-name="product.name"
             :data-item-price="product.price"
             :data-item-image="product.image"
-            :data-item-url="`https://vue-nuxt-ecommerce-fruit-shop.netlify.app/${currentUrl}`"
+            :data-item-url="`https://vue-nuxt-ecommerce-fruit-shop.netlify.app${currentUrl}`"
           >
             {{ `$${product.price}` }}
           </button>
