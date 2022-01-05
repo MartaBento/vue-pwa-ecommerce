@@ -3,14 +3,6 @@
     <main>
       <div>
         <section class="mb-10" v-for="(guide, index) in guides" :key="index">
-          <div class="post-aside mt-4 mb-4">
-            <h3 class="mb-5 underline">
-              <nuxt-link :to="guide.attributes.link">{{
-                guide.attributes.title
-              }}</nuxt-link>
-            </h3>
-            <p>{{ guide.attributes.description }}</p>
-          </div>
           <div
             class="
               grid grid-cols-2
