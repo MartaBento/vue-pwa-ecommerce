@@ -1,4 +1,3 @@
-
 <template>
   <header class="mt-10 mb-20 px-10">
     <h1 class="home-title text-4xl font-mono font-bold text-center">
