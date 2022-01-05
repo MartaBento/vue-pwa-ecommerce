@@ -26,8 +26,5 @@ $ npm run generate
 
 ## Screenshots
 ### Desktop
+![desktop](localhost_3000_.png)
 
-### Mobile
-
-
-## Lighthouse Report
